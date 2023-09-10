@@ -1,7 +1,6 @@
-const path = require('path');
 
 module.exports = {
     dbUrl: 'mongodb+srv://mainmounasakho:Hassan2014@test.kklz6qg.mongodb.net/?retryWrites=true&w=majority',
-    cert: path.join(__dirname, ''),
-    key: path.join(dirname, '')
+    cert: '/etc/letsencrypt/live/www.mainmounasakho.site/fullchain.pem',
+    key: '/etc/letsencrypt/live/www.mainmounasakho.site/privkey.pem'
 }
