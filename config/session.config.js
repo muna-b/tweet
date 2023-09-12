@@ -1,7 +1,8 @@
 const app = require('../app');
 const session = require('express-session');
 const MongoStore = require('connect-mongo')
-const {clientPromise} = require ('../database')
+const { clientPromise } = require ('../database')
+
 app.use(session({
     secret: 'Un1Deux2Trois3Quatre4',
     resave: false,
