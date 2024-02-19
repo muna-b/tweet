@@ -9,7 +9,8 @@ const userSchema = schema({
         password: { type: String, required: true},
         googleId: {type: String}
     },
-    avatar: {type: String, default: '/images/default-profile.svg'}
+    avatar: {type: String, default: '/images/default-profile.svg'},
+    following: { type: [schema.Types.ObjectId], ref: 'user' }
 });
 
 userSchema.methods.comparePassword = function (password){
