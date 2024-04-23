@@ -45,3 +45,50 @@ body{
 .b1{
     border: solid 1px green;
 }
+
+.cursor{
+    cursor: pointer;
+}
+
+#search-menu-container {
+    position: relative;
+}
+
+.search-menu {
+    position: absolute;
+    background: white;
+    z-index: 1;
+    top: 20px;
+    left:0;
+    width: 300px;
+    min-height: 200px;
+    box-shadow: 0 1px 2px 0 rgba(60, 64, 67,.3), 0 1px 3px 0 rgba(60, 64, 67,.15);
+}
+
+.serch-menu-items {
+    padding: 10px 15px;
+    border-bottom: 1px solid #eee;
+    transition: background 0.2s;
+}
+
+.serch-menu-items:hover {
+    background: #eee;
+    transition: background 0.2s;
+}
+
+.btn-follow {
+    color: #007bff!important;
+    border-radius: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    border-width: 2px;
+}
+
+.btn-follow:hover {
+    color: white!important;
+}
+
+.btn-unfollow {
+    border-radius: 30px;
+    font-weight: bold;
+}
